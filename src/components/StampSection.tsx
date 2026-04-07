@@ -103,7 +103,6 @@ export default function StampSection() {
     setError("");
   };
 
-  // Derive the display state from hook results (avoids setState in effects)
   let displayState = state;
   let displayError = error;
   if (state === "stamping") {
@@ -117,7 +116,6 @@ export default function StampSection() {
 
   return (
     <section className="relative" id="stamp-section">
-      {/* Section header */}
       <div className="mb-8 text-center">
         <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-indigo-500/20 bg-indigo-500/10 px-4 py-1.5 text-sm font-medium text-indigo-300">
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -137,11 +135,9 @@ export default function StampSection() {
         </p>
       </div>
 
-      {/* Card */}
       <div className="mx-auto max-w-2xl">
         <div className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-1 shadow-2xl shadow-indigo-500/5 backdrop-blur-sm">
           <div className="rounded-xl bg-gradient-to-b from-white/[0.03] to-transparent p-6 sm:p-8">
-            {/* Drop Zone */}
             {displayState === "idle" && (
               <label
                 onDragOver={(e) => {
@@ -186,7 +182,6 @@ export default function StampSection() {
               </label>
             )}
 
-            {/* Hashing State */}
             {displayState === "hashing" && (
               <div className="flex flex-col items-center justify-center py-16">
                 <div className="relative h-16 w-16">
@@ -199,10 +194,8 @@ export default function StampSection() {
               </div>
             )}
 
-            {/* Hashed — Ready to Stamp */}
             {(displayState === "hashed" || displayState === "stamping") && fileInfo && (
               <div className="space-y-6">
-                {/* File Info */}
                 <div className="flex items-start gap-4 rounded-xl bg-white/[0.03] p-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-indigo-500/10">
                     <svg className="h-6 w-6 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -227,7 +220,6 @@ export default function StampSection() {
                   </button>
                 </div>
 
-                {/* Hash Display */}
                 <div className="rounded-xl border border-indigo-500/20 bg-indigo-500/5 p-4">
                   <p className="mb-1 text-xs font-medium uppercase tracking-wider text-indigo-400">
                     SHA-256 Hash
@@ -237,7 +229,6 @@ export default function StampSection() {
                   </p>
                 </div>
 
-                {/* Stamp Button */}
                 {!IS_PROOF_STAMP_CONFIGURED ? (
                   <div className="rounded-xl border border-amber-500/20 bg-amber-500/5 p-4 text-left">
                     <p className="text-sm font-medium text-amber-300">
@@ -315,7 +306,6 @@ export default function StampSection() {
               </div>
             )}
 
-            {/* Success State */}
             {displayState === "stamped" && fileInfo && (
               <div className="flex flex-col items-center py-8 text-center">
                 <div className="mb-4 flex h-20 w-20 animate-bounce-in items-center justify-center rounded-full bg-emerald-500/10">
@@ -352,7 +342,6 @@ export default function StampSection() {
               </div>
             )}
 
-            {/* Error State */}
             {displayState === "error" && (
               <div className="flex flex-col items-center py-8 text-center">
                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-red-500/10">
@@ -372,7 +361,6 @@ export default function StampSection() {
           </div>
         </div>
 
-        {/* Security note */}
         <p className="mt-4 text-center text-xs text-slate-600">
           <svg className="mr-1 inline h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />

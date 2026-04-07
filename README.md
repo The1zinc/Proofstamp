@@ -15,7 +15,7 @@ Timestamped document verification built for **Arc Testnet**.
 | Layer | Technology |
 |-------|-----------|
 | Frontend | Next.js 16, TypeScript, Tailwind CSS 4 |
-| Wallet | RainbowKit 2, wagmi 3, viem |
+| Wallet | RainbowKit 2, wagmi 2, viem |
 | Smart Contract (Arc) | Solidity ^0.8.24 |
 | Optional follow-up contract | `contracts/genlayer/proof_stamp.py` |
 | Hosting | Vercel Free Tier |
@@ -125,14 +125,16 @@ proofstamp/
 | Explorer | [testnet.arcscan.app](https://testnet.arcscan.app) |
 | Faucet | [faucet.circle.com](https://faucet.circle.com/) |
 
-## Submit for Builder Programs
+## Share With Arc
 
 ### Arc Network
-1. Deploy contract to Arc Testnet
-2. Deploy frontend to Vercel
-3. Join [Arc Discord](https://discord.gg/buildonarc)
-4. Share on X/Twitter tagging @ArcNetwork
-5. Apply to Arc Builders Fund at [arc.network](https://arc.network)
+1. Deploy the contract to Arc Testnet
+2. Deploy the frontend to Vercel
+3. Join [Arc House](https://community.arc.network/) and [Arc Discord](https://discord.gg/buildonarc)
+4. Share the live demo, repo, and ArcScan contract link with the community
+5. Sign up for Builders Fund updates at [arc.network/builders-fund](https://www.arc.network/builders-fund)
+
+Use `ARC_HOUSE_PITCH.md` for a concise community-facing project summary.
 
 ## License
 

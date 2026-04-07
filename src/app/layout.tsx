@@ -49,7 +49,6 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="relative min-h-full flex flex-col bg-[#050510] text-slate-200">
-        {/* Background effects */}
         <div className="bg-glow" />
         <div className="bg-grid" />
 

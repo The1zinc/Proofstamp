@@ -12,7 +12,6 @@ export default function HowItWorks() {
 
       <div className="mx-auto max-w-4xl">
         <div className="relative flex flex-col gap-8 sm:gap-0">
-          {/* Connector line */}
           <div className="absolute left-6 top-10 hidden h-[calc(100%-5rem)] w-px bg-gradient-to-b from-indigo-500/40 via-cyan-500/40 to-emerald-500/40 sm:block" />
 
           <Step

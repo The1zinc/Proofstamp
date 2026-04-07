@@ -3,7 +3,6 @@ export default function Footer() {
     <footer className="border-t border-white/[0.06] bg-[#050510]/80 backdrop-blur-sm">
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <div className="grid gap-8 sm:grid-cols-3">
-          {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-500">
@@ -31,7 +30,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Chains */}
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400">
               Built On
@@ -55,7 +53,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Resources */}
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400">
               Resources

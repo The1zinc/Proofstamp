@@ -10,11 +10,9 @@ export const metadata: Metadata = {
 export default function VerifyPage() {
   return (
     <div className="px-4 pb-24 pt-20 sm:px-6 sm:pt-28">
-      {/* Hero glow */}
       <div className="absolute inset-x-0 top-0 h-[400px] bg-gradient-to-b from-cyan-500/[0.05] to-transparent pointer-events-none" />
 
       <div className="relative">
-        {/* Page header */}
         <div className="mb-16 text-center animate-fade-in-up">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.03] px-4 py-1.5 text-xs font-medium text-slate-400 backdrop-blur-sm">
             <svg
@@ -44,7 +42,6 @@ export default function VerifyPage() {
           </p>
         </div>
 
-        {/* Verify Section */}
         <div className="animate-fade-in-up delay-200">
           <VerifySection />
         </div>

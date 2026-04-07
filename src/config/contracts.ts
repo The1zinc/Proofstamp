@@ -1,12 +1,3 @@
-/**
- * ProofStamp Contract ABI and Address
- *
- * After deploying the Solidity contract to Arc Testnet:
- * 1. Copy the deployed contract address
- * 2. Set NEXT_PUBLIC_PROOF_STAMP_ADDRESS in .env.local
- * 3. The ABI matches contracts/arc/ProofStamp.sol
- */
-
 const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000" as const;
 
 const configuredAddress = process.env.NEXT_PUBLIC_PROOF_STAMP_ADDRESS?.trim();

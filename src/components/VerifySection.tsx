@@ -41,7 +41,6 @@ export default function VerifySection() {
     query: { enabled: !!hashToVerify && IS_PROOF_STAMP_CONFIGURED },
   });
 
-  // Derive display state and stamp data from hook results (avoids setState in effects)
   const { displayState, derivedStampData, displayError } = useMemo(() => {
     if (state === "checking" && verifyError) {
       return {
@@ -128,11 +127,9 @@ export default function VerifySection() {
 
   return (
     <section className="relative" id="verify-section">
-      {/* Card */}
       <div className="mx-auto max-w-2xl">
         <div className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-1 shadow-2xl shadow-cyan-500/5 backdrop-blur-sm">
           <div className="rounded-xl bg-gradient-to-b from-white/[0.03] to-transparent p-6 sm:p-8">
-            {/* Drop Zone */}
             {displayState === "idle" && (
               <label
                 onDragOver={(e) => {
@@ -184,7 +181,6 @@ export default function VerifySection() {
               </label>
             )}
 
-            {/* Hashing / Checking State */}
             {(displayState === "hashing" || displayState === "checking") && (
               <div className="flex flex-col items-center justify-center py-16">
                 <div className="relative h-16 w-16">
@@ -199,10 +195,8 @@ export default function VerifySection() {
               </div>
             )}
 
-            {/* Found State */}
             {displayState === "found" && fileInfo && derivedStampData && (
               <div className="space-y-5">
-                {/* Verified Badge */}
                 <div className="flex flex-col items-center py-4">
                   <div className="mb-3 flex h-20 w-20 items-center justify-center rounded-full bg-emerald-500/10 ring-4 ring-emerald-500/20">
                     <svg className="h-10 w-10 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -217,7 +211,6 @@ export default function VerifySection() {
                   </p>
                 </div>
 
-                {/* Details */}
                 <div className="space-y-3 rounded-xl border border-emerald-500/10 bg-emerald-500/5 p-5">
                   <DetailRow label="Uploaded File" value={fileInfo.name} />
                   <DetailRow
@@ -239,7 +232,6 @@ export default function VerifySection() {
               </div>
             )}
 
-            {/* Not Found State */}
             {displayState === "not-found" && fileInfo && (
               <div className="flex flex-col items-center py-8 text-center">
                 <div className="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-amber-500/10 ring-4 ring-amber-500/20">
@@ -270,7 +262,6 @@ export default function VerifySection() {
               </div>
             )}
 
-            {/* Error State */}
             {displayState === "error" && (
               <div className="flex flex-col items-center py-8 text-center">
                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-red-500/10">

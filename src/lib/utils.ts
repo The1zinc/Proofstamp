@@ -16,10 +16,6 @@ function nextTick() {
   return new Promise((resolve) => setTimeout(resolve, 0));
 }
 
-/**
- * Hash files in 1 MB chunks so large files do not need to be loaded into
- * memory all at once.
- */
 export async function hashFile(file: File): Promise<string> {
   const hasher = CryptoJS.algo.SHA256.create();
 

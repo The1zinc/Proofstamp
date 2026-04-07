@@ -14,7 +14,6 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/[0.06] bg-[#050510]/80 backdrop-blur-2xl">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
           <Link href="/" className="group flex items-center gap-2.5">
             <div className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-500 shadow-lg shadow-indigo-500/20 transition-shadow group-hover:shadow-indigo-500/40">
               <svg
@@ -36,7 +35,6 @@ export default function Header() {
             </span>
           </Link>
 
-          {/* Nav */}
           <nav className="hidden items-center gap-1 sm:flex">
             <NavLink href="/" label="Stamp" active={pathname === "/"} />
             <NavLink
@@ -46,7 +44,6 @@ export default function Header() {
             />
           </nav>
 
-          {/* Wallet */}
           <div className="scale-90 origin-right">
             {!IS_WALLETCONNECT_CONFIGURED ? (
               <div className="rounded-lg border border-amber-500/20 bg-amber-500/10 px-3 py-2 text-xs font-medium text-amber-300">

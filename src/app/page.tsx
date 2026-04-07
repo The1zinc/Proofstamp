@@ -5,19 +5,15 @@ import Features from "@/components/Features";
 export default function HomePage() {
   return (
     <div className="space-y-24 pb-24">
-      {/* Hero */}
       <section className="relative overflow-hidden px-4 pt-20 text-center sm:px-6 sm:pt-28">
-        {/* Hero glow */}
         <div className="absolute inset-x-0 top-0 h-[500px] bg-gradient-to-b from-indigo-500/[0.07] to-transparent" />
 
         <div className="relative">
-          {/* Badge */}
           <div className="animate-fade-in-up mb-6 inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.03] px-4 py-1.5 text-xs font-medium text-slate-400 backdrop-blur-sm">
             <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
             Arc Testnet workflow
           </div>
 
-          {/* Title */}
           <h1 className="animate-fade-in-up delay-100 mx-auto max-w-3xl text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl">
             Prove Any Document{" "}
             <span className="bg-gradient-to-r from-indigo-400 via-cyan-400 to-emerald-400 bg-clip-text text-transparent">
@@ -25,7 +21,6 @@ export default function HomePage() {
             </span>
           </h1>
 
-          {/* Subtitle */}
           <p className="animate-fade-in-up delay-200 mx-auto mt-6 max-w-xl text-base leading-relaxed text-slate-400 sm:text-lg">
             Drop any file. We compute its cryptographic fingerprint and stamp it
             on Arc Testnet, creating an{" "}
@@ -33,7 +28,6 @@ export default function HomePage() {
             that the document existed at that moment.
           </p>
 
-          {/* CTA buttons */}
           <div className="animate-fade-in-up delay-300 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href="#stamp-section"
@@ -78,7 +72,6 @@ export default function HomePage() {
             </a>
           </div>
 
-          {/* Stats */}
           <div className="animate-fade-in-up delay-400 mx-auto mt-16 grid max-w-md grid-cols-3 gap-6">
             <Stat label="Privacy" value="100%" />
             <Stat label="Finality" value="<1s" />
@@ -87,17 +80,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Stamp Section */}
       <div className="px-4 sm:px-6">
         <StampSection />
       </div>
 
-      {/* How It Works */}
       <div className="px-4 sm:px-6">
         <HowItWorks />
       </div>
 
-      {/* Features */}
       <div className="px-4 sm:px-6">
         <Features />
       </div>
