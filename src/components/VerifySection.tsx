@@ -219,7 +219,11 @@ export default function VerifySection() {
 
                 {/* Details */}
                 <div className="space-y-3 rounded-xl border border-emerald-500/10 bg-emerald-500/5 p-5">
-                  <DetailRow label="File" value={fileInfo.name} />
+                  <DetailRow label="Uploaded File" value={fileInfo.name} />
+                  <DetailRow
+                    label="Stamped File"
+                    value={derivedStampData.fileName || "Unknown"}
+                  />
                   <DetailRow label="Hash" value={formatHash(fileInfo.hash)} mono />
                   <DetailRow label="Stamped by" value={formatAddress(derivedStampData.stamper)} mono />
                   <DetailRow label="Timestamp" value={formatTimestamp(derivedStampData.timestamp)} />

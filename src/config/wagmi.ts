@@ -42,28 +42,35 @@ export const arcTestnet = defineChain({
   testnet: true,
 });
 
-const connectors = connectorsForWallets(
-  [
+function getConnectors() {
+  const recommendedWallets =
+    typeof window !== "undefined" && IS_WALLETCONNECT_CONFIGURED
+      ? [injectedWallet, walletConnectWallet]
+      : [injectedWallet];
+
+  return connectorsForWallets(
+    [
+      {
+        groupName: "Recommended",
+        wallets: recommendedWallets,
+      },
+      {
+        groupName: "Advanced",
+        wallets: [safeWallet],
+      },
+    ],
     {
-      groupName: "Recommended",
-      wallets: [injectedWallet, walletConnectWallet],
-    },
-    {
-      groupName: "Advanced",
-      wallets: [safeWallet],
-    },
-  ],
-  {
-    appName: "ProofStamp",
-    appDescription: "Hash and stamp documents on Arc Testnet.",
-    projectId: walletConnectProjectId,
-  }
-);
+      appName: "ProofStamp",
+      appDescription: "Hash and stamp documents on Arc Testnet.",
+      projectId: walletConnectProjectId,
+    }
+  );
+}
 
 export function getConfig() {
   return createConfig({
     chains: [arcTestnet],
-    connectors,
+    connectors: getConnectors(),
     storage: createStorage({
       storage: cookieStorage,
     }),
