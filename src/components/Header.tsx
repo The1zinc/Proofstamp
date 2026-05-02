@@ -44,7 +44,7 @@ export default function Header() {
             />
           </nav>
 
-          <div className="scale-90 origin-right">
+          <div className="scale-90 origin-right pr-1 sm:pr-0">
             {!IS_WALLETCONNECT_CONFIGURED ? (
               <div className="rounded-lg border border-amber-500/20 bg-amber-500/10 px-3 py-2 text-xs font-medium text-amber-300">
                 Set wallet env

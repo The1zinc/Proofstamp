@@ -128,6 +128,33 @@ export default function VerifySection() {
   return (
     <section className="relative" id="verify-section">
       <div className="mx-auto max-w-2xl">
+        {!IS_PROOF_STAMP_CONFIGURED && (
+          <div className="mb-6 flex items-start gap-3 rounded-xl border border-amber-500/20 bg-amber-500/10 p-4">
+            <svg
+              className="mt-0.5 h-5 w-5 shrink-0 text-amber-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.072 16.5c-.77.833.192 2.5 1.732 2.5z"
+              />
+            </svg>
+            <div className="text-sm leading-relaxed text-amber-200">
+              <p className="font-semibold text-amber-300">
+                Action Required: Contract Not Configured
+              </p>
+              <p className="mt-1 opacity-80">
+                Add `NEXT_PUBLIC_PROOF_STAMP_ADDRESS` to your `.env.local` to
+                verify documents against the Arc Testnet contract.
+              </p>
+            </div>
+          </div>
+        )}
+
         <div className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-1 shadow-2xl shadow-cyan-500/5 backdrop-blur-sm">
           <div className="rounded-xl bg-gradient-to-b from-white/[0.03] to-transparent p-6 sm:p-8">
             {displayState === "idle" && (
@@ -167,12 +194,6 @@ export default function VerifySection() {
                   File is hashed locally in chunks · Only the SHA-256 hash is
                   checked on Arc
                 </p>
-                {!IS_PROOF_STAMP_CONFIGURED && (
-                  <p className="mt-3 max-w-md text-center text-xs text-amber-300">
-                    Configure `NEXT_PUBLIC_PROOF_STAMP_ADDRESS` before trying to
-                    verify against Arc Testnet.
-                  </p>
-                )}
                 <input
                   type="file"
                   className="hidden"

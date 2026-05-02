@@ -72,7 +72,7 @@ export default function HomePage() {
             </a>
           </div>
 
-          <div className="animate-fade-in-up delay-400 mx-auto mt-16 grid max-w-md grid-cols-3 gap-6">
+          <div className="animate-fade-in-up delay-400 mx-auto mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-6 sm:grid sm:max-w-md sm:grid-cols-3 sm:gap-6">
             <Stat label="Privacy" value="100%" />
             <Stat label="Finality" value="<1s" />
             <Stat label="Gas Token" value="USDC" />
