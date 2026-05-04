@@ -1,4 +1,4 @@
-# ProofStamp — Blockchain Document Verification
+# ProofStamp - Blockchain Document Verification
 
 Timestamped document verification built for **Arc Testnet**.
 
@@ -6,9 +6,9 @@ Timestamped document verification built for **Arc Testnet**.
 
 ## What It Does
 
-- **Stamp**: Drop any file → SHA-256 hash computed locally → hash stamped on-chain with timestamp
-- **Verify**: Drop the same file → hash recomputed → checked against blockchain
-- **Privacy**: Your file never leaves your device — only the hash goes on-chain
+- **Stamp**: Drop any file -> SHA-256 hash computed locally -> hash stamped on-chain with timestamp
+- **Verify**: Drop the same file -> hash recomputed -> checked against blockchain
+- **Privacy**: Your file never leaves your device - only the hash goes on-chain
 
 ## Tech Stack
 
@@ -19,7 +19,7 @@ Timestamped document verification built for **Arc Testnet**.
 | Smart Contract (Arc) | Solidity ^0.8.24 |
 | Optional follow-up contract | `contracts/genlayer/proof_stamp.py` |
 | Hosting | Vercel Free Tier |
-| Database | None — blockchain is the database |
+| Database | None - blockchain is the database |
 
 ## Quick Start
 
