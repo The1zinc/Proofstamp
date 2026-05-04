@@ -86,32 +86,32 @@ vercel
 
 ```
 proofstamp/
-├── contracts/
-│   ├── arc/
-│   │   └── ProofStamp.sol          # Solidity contract for Arc
-│   └── genlayer/
-│       └── proof_stamp.py          # Optional future GenLayer contract
-├── src/
-│   ├── app/
-│   │   ├── globals.css             # Dark theme + animations
-│   │   ├── layout.tsx              # Root layout with providers
-│   │   ├── page.tsx                # Home (Stamp) page
-│   │   └── verify/
-│   │       └── page.tsx            # Verify page
-│   ├── components/
-│   │   ├── Providers.tsx           # Web3 providers wrapper
-│   │   ├── Header.tsx              # Navigation + wallet
-│   │   ├── StampSection.tsx        # File drop + stamp UI
-│   │   ├── VerifySection.tsx       # File drop + verify UI
-│   │   ├── Features.tsx            # Feature cards
-│   │   ├── HowItWorks.tsx          # Steps section
-│   │   └── Footer.tsx              # Links + resources
-│   ├── config/
-│   │   ├── wagmi.ts                # Chain + wallet config
-│   │   └── contracts.ts            # ABI + address
-│   └── lib/
-│       └── utils.ts                # SHA-256 hashing + formatters
-└── package.json
+|-- contracts/
+|   |-- arc/
+|   |   \-- ProofStamp.sol          # Solidity contract for Arc
+|   \-- genlayer/
+|       \-- proof_stamp.py          # Optional future GenLayer contract
+|-- src/
+|   |-- app/
+|   |   |-- globals.css             # Dark theme + animations
+|   |   |-- layout.tsx              # Root layout with providers
+|   |   |-- page.tsx                # Home (Stamp) page
+|   |   \-- verify/
+|   |       \-- page.tsx            # Verify page
+|   |-- components/
+|   |   |-- Providers.tsx           # Web3 providers wrapper
+|   |   |-- Header.tsx              # Navigation + wallet
+|   |   |-- StampSection.tsx        # File drop + stamp UI
+|   |   |-- VerifySection.tsx       # File drop + verify UI
+|   |   |-- Features.tsx            # Feature cards
+|   |   |-- HowItWorks.tsx          # Steps section
+|   |   \-- Footer.tsx              # Links + resources
+|   |-- config/
+|   |   |-- wagmi.ts                # Chain + wallet config
+|   |   \-- contracts.ts            # ABI + address
+|   \-- lib/
+|       \-- utils.ts                # SHA-256 hashing + formatters
+\-- package.json
 ```
 
 ## Arc Network Details
