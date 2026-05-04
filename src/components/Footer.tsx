@@ -79,7 +79,7 @@ export default function Footer() {
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/[0.04] pt-6 sm:flex-row">
           <p className="text-xs text-slate-600">
-            © {new Date().getFullYear()} ProofStamp. Open source. No warranty.
+            (c) {new Date().getFullYear()} ProofStamp. Open source. No warranty.
           </p>
           <div className="flex items-center gap-1.5 text-xs text-slate-600">
             <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />

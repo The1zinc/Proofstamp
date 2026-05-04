@@ -17,7 +17,6 @@ Timestamped document verification built for **Arc Testnet**.
 | Frontend | Next.js 16, TypeScript, Tailwind CSS 4 |
 | Wallet | RainbowKit 2, wagmi 2, viem |
 | Smart Contract (Arc) | Solidity ^0.8.24 |
-| Optional follow-up contract | `contracts/genlayer/proof_stamp.py` |
 | Hosting | Vercel Free Tier |
 | Database | None - blockchain is the database |
 
@@ -63,7 +62,6 @@ After deployment, copy the contract address into `NEXT_PUBLIC_PROOF_STAMP_ADDRES
 
 ### Update Frontend
 Restart the Next.js app after updating `.env.local` so the new Arc contract address is picked up.
-
 
 
 ## Deploy Frontend to Vercel
@@ -118,7 +116,6 @@ proofstamp/
 | Gas Token | USDC |
 | Explorer | [testnet.arcscan.app](https://testnet.arcscan.app) |
 | Faucet | [faucet.circle.com](https://faucet.circle.com/) |
-
 
 
 ## License

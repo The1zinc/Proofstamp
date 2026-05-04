@@ -191,7 +191,7 @@ export default function VerifySection() {
                   <span className="text-cyan-400">verify its stamp</span>
                 </p>
                 <p className="mt-1 text-xs text-slate-500">
-                  File is hashed locally in chunks · Only the SHA-256 hash is
+                  File is hashed locally in chunks | Only the SHA-256 hash is
                   checked on Arc
                 </p>
                 <input
@@ -225,7 +225,7 @@ export default function VerifySection() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold text-emerald-400">
-                    Verified ✓
+                    Verified
                   </h3>
                   <p className="mt-1 text-sm text-slate-400">
                     This uploaded file matches a stamped SHA-256 hash on Arc

@@ -2,7 +2,7 @@ import VerifySection from "@/components/VerifySection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Verify Document — ProofStamp",
+  title: "Verify Document - ProofStamp",
   description:
     "Verify if a document has been previously stamped on the Arc blockchain. Drop any file to check its proof of existence.",
 };

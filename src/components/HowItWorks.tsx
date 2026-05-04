@@ -17,7 +17,7 @@ export default function HowItWorks() {
           <Step
             number={1}
             title="Drop Your File"
-            description="Drag and drop any file into ProofStamp. Your file is processed entirely in your browser — it never leaves your device."
+            description="Drag and drop any file into ProofStamp. Your file is processed entirely in your browser - it never leaves your device."
             color="indigo"
           />
           <Step

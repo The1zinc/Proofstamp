@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ProofStamp — Blockchain Document Verification",
+  title: "ProofStamp - Blockchain Document Verification",
   description:
     "Stamp and verify documents on the Arc blockchain. Immutable, private, and instant proof of existence powered by SHA-256 hashing and on-chain timestamps.",
   keywords: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "USDC",
   ],
   openGraph: {
-    title: "ProofStamp — Blockchain Document Verification",
+    title: "ProofStamp - Blockchain Document Verification",
     description:
       "Immutable proof of existence for any document. Powered by Arc Network.",
     type: "website",

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-/// @title ProofStamp — Timestamped Document Verification on Arc Network
+/// @title ProofStamp - Timestamped Document Verification on Arc Network
 /// @notice Store and verify SHA-256 document hashes on-chain
 /// @dev Uses USDC as native gas on Arc. No external dependencies needed.
 

@@ -60,7 +60,7 @@ export default function Features() {
             />
           }
           title="Stablecoin Gas"
-          description="Arc uses USDC as native gas — predictable costs in real dollars, no volatile token needed."
+          description="Arc uses USDC as native gas - predictable costs in real dollars, no volatile token needed."
           color="violet"
         />
         <FeatureCard

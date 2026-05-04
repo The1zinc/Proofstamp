@@ -172,7 +172,7 @@ export default function StampSection() {
                   <span className="text-indigo-400">click to browse</span>
                 </p>
                 <p className="mt-1 text-xs text-slate-500">
-                  Any file type · Hashed locally in chunks · Never uploaded
+                  Any file type | Hashed locally in chunks | Never uploaded
                 </p>
                 <input
                   type="file"
