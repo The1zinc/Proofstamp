@@ -64,11 +64,7 @@ After deployment, copy the contract address into `NEXT_PUBLIC_PROOF_STAMP_ADDRES
 ### Update Frontend
 Restart the Next.js app after updating `.env.local` so the new Arc contract address is picked up.
 
-## Optional GenLayer Follow-Up
 
-This repo still includes an experimental GenLayer contract at
-`contracts/genlayer/proof_stamp.py`, but the current frontend is Arc-only and
-does not call GenLayer yet.
 
 ## Deploy Frontend to Vercel
 
@@ -87,10 +83,8 @@ vercel
 ```
 proofstamp/
 |-- contracts/
-|   |-- arc/
-|   |   \-- ProofStamp.sol          # Solidity contract for Arc
-|   \-- genlayer/
-|       \-- proof_stamp.py          # Optional future GenLayer contract
+|   \-- arc/
+|       \-- ProofStamp.sol          # Solidity contract for Arc
 |-- src/
 |   |-- app/
 |   |   |-- globals.css             # Dark theme + animations
@@ -125,16 +119,7 @@ proofstamp/
 | Explorer | [testnet.arcscan.app](https://testnet.arcscan.app) |
 | Faucet | [faucet.circle.com](https://faucet.circle.com/) |
 
-## Share With Arc
 
-### Arc Network
-1. Deploy the contract to Arc Testnet
-2. Deploy the frontend to Vercel
-3. Join [Arc House](https://community.arc.network/) and [Arc Discord](https://discord.gg/buildonarc)
-4. Share the live demo, repo, and ArcScan contract link with the community
-5. Sign up for Builders Fund updates at [arc.network/builders-fund](https://www.arc.network/builders-fund)
-
-Use `ARC_HOUSE_PITCH.md` for a concise community-facing project summary.
 
 ## License
 
